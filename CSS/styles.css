@@ -1,0 +1,68 @@
+.navbar-custom-font {
+    font-family: 'UnifrakturCook', cursive;
+  }
+
+.nav-item button {
+    font-size: 25px;
+    color: rgb(222, 222, 222);
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-name {
+    margin-top: 25px;
+    margin-left: 15px;
+    color: rgb(222, 222, 222);
+}
+
+#contenedor {
+    background-image: url("/IMG/gothic-img.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    padding-top: 300px;
+    height: 1000px;
+}
+
+#contenedor h1 {
+    padding-bottom: 175px;
+}
+
+.welcome {
+    font-family: 'UnifrakturCook', cursive;
+    color: rgb(225, 191, 191);
+    font-size: 75px;
+}
+
+.boton {
+    border-radius: 100px;
+    background-color: rgb(189, 41, 41);
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 40px;
+    padding: 10px 30px;
+    border: solid 1px;
+    transition-duration: 0.25s;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(228, 30, 30);
+    padding: 1px 60px;
+    margin-top: 7px;
+    color: rgb(222, 222, 222);
+    transition-duration: 0.25s;
+}
+
+.carousel-item {
+    max-height: 700px;
+}
+
+.carousel {
+    max-width: 700px;
+}
+
+.products {
+    padding: 50px
+}
