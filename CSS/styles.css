@@ -1,5 +1,5 @@
 * {
-    font-family: 'UnifrakturCook', cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-item button {
@@ -13,9 +13,8 @@
 }
 
 .logo-name {
-    margin-top: 25px;
-    margin-left: 15px;
-    color: rgb(222, 222, 222);
+    width: 170px;
+    height: 60px;
 }
 
 #contenedor {
@@ -90,17 +89,19 @@
 }
 
 .carousel {
-  background-color: white;
-  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  max-width: 300px;
-  text-align: left;
-  transition: transform 0.2s;
+    background-color: white;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.2s;
 }
 
-.carrousel-item img {
-    object-fit: cover;
-    display: block;
-    width: 100%;
+.carousel-item {
+    height: 350px;
+    overflow: hidden;
+}
+.carousel-item img {
     height: 100%;
+    overflow: hidden;
 }
