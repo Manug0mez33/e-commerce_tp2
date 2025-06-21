@@ -2,6 +2,11 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
+
 .nav-item button {
     font-size: 25px;
     color: rgb(222, 222, 222);
@@ -34,6 +39,16 @@
     font-size: 140px;
     padding-bottom: 175px;
     color: rgb(189, 189, 189);
+}
+
+#contenedor2 {
+  background-image: url("/IMG/fresko-poster.jpg");
+  background-size: contain;           /* Ajusta toda la imagen visible */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000; /* o el color de fondo que combine */
+  padding: 5% 10%;
+  height: 900px;
 }
 
 /* Typewriter Animation */
@@ -85,6 +100,7 @@
 }
 
 .general {
+    min-height: 500px;
     background: #ffffff;
     background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(168, 168, 168, 1) 100%);
 }
@@ -124,17 +140,42 @@
 }
 
 .see-more {
-    width:170px;
-    height: 60px;
-    border: 3px solid rgb(33, 37, 41);
-    border-radius: 30px;
+  position: relative;
+  overflow: hidden; /* importante para que el pseudo-elemento no se desborde */
+  width: 170px;
+  height: 60px;
+  border: 3px solid rgb(33, 37, 41);
+  border-radius: 30px;
+  z-index: 0; /* asegurarse de que el contenido quede por encima */
+}
+
+/* Relleno animado desde la izquierda */
+.see-more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(68, 70, 72); /* color de relleno */
+  z-index: -1; /* detrás del texto e íconos */
+  transition: width 0.4s ease-in-out;
+  border-radius: inherit;
+}
+
+.see-more:hover::before {
+  width: 100%;
 }
 
 .see-more:hover {
-    border-color: rgb(111, 110, 110);
-    background-color: rgb(68, 70, 72);
-    color: white;
-    transition: ease-in .3s;
+  color: white;
+  border-color: rgb(111, 110, 110);
+}
+
+.see-more h3,
+.see-more img {
+  z-index: 1;
+  position: relative;
 }
 
 footer {
