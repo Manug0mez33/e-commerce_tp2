@@ -27,7 +27,7 @@ body {
 }
 
 #contenedor {
-    background-image: url("/IMG/fresko-bg.jpg");
+    background-image: url("../IMG/fresko-bg.jpg");
     background-size:cover;
     background-position: center top;
     padding: 5% 10%;
@@ -46,7 +46,7 @@ body {
 }
 
 #contenedor2 {
-    background-image: url("/IMG/fresko-poster.jpg");
+    background-image: url("../IMG/fresko-poster.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -189,7 +189,7 @@ footer {
 @media (max-width: 799px) {
 
     #contenedor {
-        background-image: url("/IMG/fresko-bg-mobile.jpg");
+        background-image: url("../IMG/fresko-bg-mobile.jpg");
     }
 
     #promos {
