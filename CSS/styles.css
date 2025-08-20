@@ -183,7 +183,7 @@ body {
 }
 
 footer {
-    height: 150px;
+    min-height: 203px;
 }
 
 @media (max-width: 799px) {
